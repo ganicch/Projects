@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/cd20a3b6e8.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel='stylesheet' href='/stylesheets/shop.css' />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+
+        function korpa(){
+            $.ajax({
+                url: "/users/korpa" ,
+                data: {},
+                type: 'POST',
+                beforeSend: function () {
+                }
+            }).done(function (data) {
+                console.info("nesto")
+            });
+        }
+
+
+    </script>
+</head>
+<body>
+    <%if(tip === 1){%>
+    <div class="nav-bar">
+        <a href="/home"> <img src="/../images/logo.png" class="nav-logo" ></a>
+        <ul>
+            <a href="/home"><li>Home</li></a>
+            <a href="/shop/sho" class="active"><li>Shop</li></a>
+            <a href="/users/nalog"><li>My account</li></a>
+            <a href="/myshop"><li>My Shop</li></a>
+        </ul>
+        <a class="signout" href="/login/logout"><i class="fas fa-sign-out-alt"></i></a>
+    </div>
+    <%}else{%>
+    <div class="nav-bar">
+        <a href="/home"> <img src="/../images/logo.png" class="nav-logo" ></a>
+        <ul>
+            <a href="/home"><li>Home</li></a>
+            <a href="/shop/sho" class="active"><li>Shop</li></a>
+            <a href="/users/nalog"><li>My account</li></a>
+
+        </ul>
+        <a href="/users/korpa"><div class="korpa">
+                <i class="fas fa-shopping-cart" ></i>
+            </div></a>
+        <a class="signout" href="/login/logout"><i class="fas fa-sign-out-alt"></i></a>
+    </div>
+    <%}%>
+
+<div class="products">
+    <form method="post" action="/shop/search" style="margin-bottom: 20px">
+        <input type="text" class="search" placeholder="Search" name="unos" value="" style="height: 25px;border-radius: 20px;">
+    </form>
+    <form class="filter" method="post" action="/shop/shopp" >
+        <h3>Filter: </h3>
+        <select name="filter1">
+            <option>All</option>
+            <%for(let i=0;i<ispisi.length;i++) {%>
+                <option><%=ispisi[i].naziv%></option>
+            <%}%>
+        </select>
+        <input class="cijena" type="number" placeholder="Cijena do" value="" name="filter2">
+        <input type="submit" value="Trazi" style="height: 25px">
+    </form>
+    <div class="produkti">
+
+        <%for(let i=0;i<artikli.length;i++) {%>
+        <div class="produkt" >
+            <p><%=artikli[i].username%></p>
+            <img src="/../uploads/<%=artikli[i].slika%>" class="product-img">
+            <h3 class="produkt-naslov"><%=artikli[i].naziv%></h3>
+            <p><%=artikli[i].kat%></p>
+            <h4><%=artikli[i].cijena%> KM</h4>
+            <form method="post" action="/shop/product/post">
+                <select name="id" style="display: none">
+                    <option value="<%=artikli[i].ide%>"></option>
+                </select>
+                <input type="submit" value="pogledaj" class="dugmic">
+            </form>
+        </div>
+        <%}%>
+
+    </div>
+</div>
+</body>
+</html>

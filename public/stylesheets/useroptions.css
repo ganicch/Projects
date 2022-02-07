@@ -1,0 +1,69 @@
+
+.nav-bar {
+    position: relative;
+    display: flex;
+    top:0;
+    width: 100vw;
+    height: 70px;
+    background-color: rgba(128, 128, 128,0.7);
+    justify-content: center;
+    align-items: center;
+}
+.nav-logo {
+    width: 200px;
+    height: 100px;
+
+}
+.sve {
+    background-image: url("../images/adminpozadina.jpg");
+    width: 100vw;
+    background-size: cover;
+    padding: 0px 100px;
+}
+.sve-unutra {
+    /*background-color: rgba(128, 128, 128,0.2);*/
+    padding: 100px;
+}
+
+.sve-unutra h1 {
+    text-align: center;
+    color: brown;
+    background-color:rgba(128, 128, 128,0.7) ;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px black;
+}
+button {
+    float: right;
+    margin-right: 15px;
+}
+
+form {
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+
+}
+label {
+    color: white;
+}
+.signout {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    font-size: 28px;
+    color: white;
+
+}
+a:hover {
+    color:#c20000;
+
+}
+
+.back {
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+    font-size: 28px;
+    color: white;
+}

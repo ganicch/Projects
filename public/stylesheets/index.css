@@ -1,0 +1,124 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+
+
+
+}
+.nav-bar {
+    position: fixed;
+    top: 0;
+    height: 50px;
+    background-color: rgba(128, 128, 128,0.5);
+    width: 100vw;
+    display: flex;
+    padding: 5px 70px;
+    align-items: center;
+
+}
+.nav-logo {
+    width: 140px;
+    height: 70px;
+
+}
+ul {
+    display: flex;
+    gap: 25px;
+    flex: 1;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+
+
+}
+li {
+    width: 150px;
+    padding: 5px;
+    background-color: transparent;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+
+}
+.active {
+    border-bottom: solid #c20000 3px;
+
+}
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    font-size: 10px;
+}
+a:hover {
+    color:#c20000;
+
+}
+.korpa {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    background-color:#940c00;
+    box-shadow: -1px 5px 12px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 5px 12px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 5px 12px 0px rgba(0,0,0,0.75);
+}
+.hero {
+    margin-top: 100px;
+    height: 350px;
+    width: 70vw;
+    background-image: url("../images/banner-home.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.sve {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.last {
+    display: flex;
+    gap: 10px;
+    width: 60vw;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.last .jedan {
+    background: linear-gradient(90deg, rgba(58,48,100,1) 0%, rgba(224,61,124,1) 100%, rgba(70,151,232,1) 100%);
+    width: 150px;
+    height: 200px;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+#dva {
+    background: linear-gradient(90deg, rgba(86,43,97,1) 0%, rgba(193,224,61,1) 0%, rgba(70,151,232,1) 100%);
+
+}
+.jedan:hover {
+    margin-top: -20px;
+
+}
+.last img {
+    width: 100px;
+    height: 70px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+

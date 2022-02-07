@@ -1,0 +1,136 @@
+body {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+    background-size: cover;
+
+
+
+}
+.nav-bar {
+    position: fixed;
+    top: 0;
+    height: 50px;
+    background-color: rgba(128, 128, 128,0.5);
+    width: 100vw;
+    display: flex;
+    padding: 5px 70px;
+    align-items: center;
+
+}
+.nav-logo {
+    width: 140px;
+    height: 70px;
+
+}
+ul {
+    display: flex;
+    gap: 25px;
+    flex: 1;
+    margin: auto;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 0;
+
+}
+li {
+    width: 150px;
+    padding: 5px;
+    background-color: transparent;
+    border-radius: 10px;
+    text-align: center;
+
+}
+.active {
+    border-bottom: solid #c20000 3px;
+
+}
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    font-size: 10px;
+}
+a:hover {
+    color:#c20000;
+
+}
+.korpa {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    background-color:#940c00;
+    box-shadow: -1px 5px 12px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 5px 12px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 5px 12px 0px rgba(0,0,0,0.75);
+}
+
+.sve {
+    width: 60vw;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.naslovna {
+    width: 60vw;
+    height: 40vh;
+    background: #395fb2;
+    margin: auto;
+}
+.profilna {
+    width: 13vw;
+    height: 28vh;
+    background: gray;
+    margin:-100px auto auto auto ;
+    border: solid 1px black;
+}
+.id {
+    border-bottom: solid black 2px;
+    padding: 10px;
+}
+.iip {
+    display: flex;
+    gap: 20px;
+    border-bottom: solid black 2px;
+    padding: 10px;
+}
+.email {
+    border-bottom: solid black 2px;
+    padding: 10px;
+}
+.username {
+    border-bottom: solid black 2px;
+    padding: 10px;
+}
+.tip {
+    border-bottom: solid black 2px;
+    padding: 10px;
+}
+.interes {
+    border-bottom: solid black 2px;
+    padding: 10px;
+}
+.oprofilu {
+    clip-path: polygon(73% 0, 37% 54%, 100% 74%, 100% 100%, 0 100%, 0 0);
+}
+.slike {
+    border: solid black 2px;
+    padding: 10px;
+}
+.status {
+    border-bottom: solid black 2px;
+    padding: 10px;
+}
+.signout {
+    position: absolute;
+    right: 20px;
+    font-size: 28px;
+}

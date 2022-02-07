@@ -1,0 +1,160 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+
+
+
+}
+.nav-bar {
+    position: fixed;
+    top: 0;
+    height: 50px;
+    background-color: rgba(128, 128, 128,0.5);
+    width: 100vw;
+    display: flex;
+    padding: 5px 70px;
+    align-items: center;
+
+}
+.nav-logo {
+    width: 140px;
+    height: 70px;
+
+}
+ul {
+    display: flex;
+    gap: 25px;
+    flex: 1;
+    margin: auto;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 0;
+
+}
+li {
+    width: 150px;
+    padding: 5px;
+    background-color: transparent;
+    border-radius: 10px;
+    text-align: center;
+
+}
+.active {
+    border-bottom: solid #c20000 3px;
+
+}
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    font-size: 10px;
+}
+a:hover {
+    color:#c20000;
+
+}
+.korpa {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    background-color:#940c00;
+    box-shadow: -1px 5px 12px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 5px 12px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 5px 12px 0px rgba(0,0,0,0.75);
+}
+
+.sve {
+    padding: 20px;
+    margin-top: 200px;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.jedan {
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    height: 150px;
+    width: 60vw;
+    gap: 20px;
+    margin-bottom: 20px;
+    border: solid rgba(128, 128, 128,0.5) 3px;
+}
+.jedan .opis {
+  flex: 1;
+}
+.jedan img {
+    height: 100px;
+    max-width: 250px;
+}
+form {
+    position: relative;
+}
+.x {
+    position: absolute;
+    background: transparent;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+}
+
+.x:hover {
+    background: black;
+    color: white;
+}
+.pogledaj {
+    position: absolute;
+    background: transparent;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 10px;
+    border: solid black 2px;
+}
+.pogledaj:hover {
+    background: black;
+    color: white;
+}
+
+.opis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.potvrdi {
+    width: 300px;
+    height: 50px;
+    background: green;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border-radius: 20px;
+}
+.odbij {
+    width: 300px;
+    height: 50px;
+    background: #940c00;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border-radius: 20px;
+}
+.dugmad {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.signout {
+    position: absolute;
+    right: 20px;
+    font-size: 28px;
+}

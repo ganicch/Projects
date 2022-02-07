@@ -1,0 +1,156 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+
+
+
+}
+.nav-bar {
+    position: fixed;
+    top: 0;
+    height: 50px;
+    background-color: rgba(128, 128, 128,0.5);
+    width: 100vw;
+    display: flex;
+    padding: 5px 70px;
+    align-items: center;
+
+}
+.nav-logo {
+    width: 140px;
+    height: 70px;
+
+}
+ul {
+    display: flex;
+    gap: 25px;
+    flex: 1;
+    margin: auto;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 0;
+
+}
+li {
+    width: 150px;
+    padding: 5px;
+    background-color: transparent;
+    border-radius: 10px;
+    text-align: center;
+
+}
+.active {
+    border-bottom: solid #c20000 3px;
+
+}
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    font-size: 10px;
+}
+a:hover {
+    color:#c20000;
+
+}
+.korpa {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    background-color:#940c00;
+    box-shadow: -1px 5px 12px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 5px 12px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 5px 12px 0px rgba(0,0,0,0.75);
+}
+.produkti {
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+.filter {
+    display: flex;
+    margin-bottom: 40px;
+    gap: 20px;
+    justify-content: center;
+}
+.filter h3 {
+    color: white;
+    font-size: 25px;
+}
+select {
+    height: 25px;
+    padding-left: 10px;
+}
+button {
+    height: 25px;
+}
+.products {
+    display: flex;
+    width: 60vw;
+    margin: auto;
+    margin-top: 150px;
+    padding: 50px;
+    flex-direction: column;
+    background-color: rgba(128, 128, 128,0.7);
+    border-left: solid #395fb2 7px;
+
+}
+.produkt {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    background-color: white;
+    width: 180px;
+    height: 230px;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border-left: solid #395fb2 7px;
+    justify-content: space-around;
+}
+
+.produkt h4{
+    color: #940c00;
+    font-size: 15px;
+}
+.product-img {
+    display: flex;
+    width: 120px;
+    height: 70px;
+    border-radius: 20px;
+}
+.produkt-naslov {
+    margin-top: 10px;
+    font-size: 15px;
+}
+.cijena {
+    height: 25px;
+}
+.myshop {
+    margin-bottom: 50px;
+}
+.produkt p {
+    font-size: 10px;
+}
+.dugmic {
+    background: linear-gradient(90deg, rgba(86,43,97,1) 0%, rgba(193,224,61,1) 0%, rgba(70,151,232,1) 100%);
+    border-radius: 10px;
+}
+.search {
+    padding-left: 10px;
+}
+.signout {
+    position: absolute;
+    right: 20px;
+    font-size: 28px;
+}

@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-image: url("../images/pozadina2.jpg");
+    background-size: cover;
+
+
+
+}
+.nav-bar {
+    position: fixed;
+    top: 0;
+    height: 50px;
+    background-color: rgba(128, 128, 128,0.5);
+    width: 100vw;
+    display: flex;
+    padding: 5px 70px;
+    align-items: center;
+
+}
+.nav-logo {
+    width: 140px;
+    height: 70px;
+
+}
+ul {
+    display: flex;
+    gap: 25px;
+    flex: 1;
+    margin: auto;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 0;
+
+}
+li {
+    width: 150px;
+    padding: 5px;
+    background-color: transparent;
+    border-radius: 10px;
+    text-align: center;
+
+}
+.active {
+    border-bottom: solid #c20000 3px;
+
+}
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    font-size: 10px;
+}
+a:hover {
+    color:#c20000;
+
+}
+.korpa {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    background-color:#940c00;
+    box-shadow: -1px 5px 12px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 5px 12px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 5px 12px 0px rgba(0,0,0,0.75);
+}
+
+.artikli{
+    margin-top: 200px;
+}
+.table {
+    width: 70vw;
+    margin-top: 200px;
+}
+.table tr {
+    height: 60px;
+}
+.signout {
+    position: absolute;
+    right: 20px;
+    font-size: 28px;
+}

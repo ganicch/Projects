@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    justify-content: right;
+    margin-right: 20vw;
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    padding-top: 10vh;
+
+}
+.forma-centar {
+    display: flex;
+    flex-direction: column;
+    width: 27vw;
+    height: 70vh;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 35px;
+    background-color: white;
+    border: solid black 5px;
+    box-shadow: -1px 6px 12px 0px rgba(0,0,0,0.80);
+    -webkit-box-shadow: -1px 6px 12px 0px rgba(0,0,0,0.80);
+    -moz-box-shadow: -1px 6px 12px 0px rgba(0,0,0,0.80);
+
+}
+
+.opcije {
+    display: flex;
+    margin: auto;
+
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+h3 {
+    text-transform: uppercase;
+}
+
+form .unos {
+    width: 23vw;
+    margin: auto;
+    height: 35px;
+    border-radius: 25px;
+    background:transparent;
+    padding-left: 30px;
+}
+
+
+.dugme {
+    width: 27vw;
+    height: 3vw;
+    background-color:#940c00;
+    color: lightgrey;
+}
+select {
+    padding-left: 20px;
+}
+.tip {
+
+    width: 11.5vw;
+    margin: auto;
+    height: 35px;
+    border-radius: 25px;
+    background:transparent;
+
+}
+.opcije{
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    margin: auto;
+}
+.forma-logo {
+    width: 13vw;
+    height: 15vh;
+    margin-top: -45px;
+    background: white;
+    border-radius: 50px;
+
+}
+a {
+    margin: auto;
+    text-decoration: none;
+}

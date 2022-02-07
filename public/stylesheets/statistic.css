@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.nav-bar {
+    position: relative;
+    display: flex;
+    top:0;
+    width: 100vw;
+    height: 70px;
+    background-color: rgba(128, 128, 128,0.7);
+    justify-content: center;
+    align-items: center;
+}
+.nav-logo {
+    width: 200px;
+    height: 100px;
+
+}
+
+.sve-gore {
+    margin-top: 100px;
+    display: flex;
+    gap: 40px;
+
+}
+.chart {
+    width: 400px;
+}
+.signout {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    font-size: 28px;
+    color: white;
+
+}
+a:hover {
+    color:#c20000;
+
+}
+
+.back {
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+    font-size: 28px;
+    color: white;
+}
