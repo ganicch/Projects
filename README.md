@@ -9,5 +9,18 @@
 * ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
 
 # Getting Started
-### Installation
+## Installation
+1. Clone the repo
+```node.js
+git clone https://github.com/ganicch/Web_Shop.git
+```
+2. Install NPM packages
+```node.js
+npm install
+```
+## Start
+```npm
+npm start
+```
+
 # Contact
