@@ -15,7 +15,7 @@
 git clone https://github.com/ganicch/Web_Shop.git
 ```
 2. Install NPM packages
-```node.js
+```node
 npm install
 ```
 ## Start
@@ -24,3 +24,6 @@ npm start
 ```
 
 # Contact
+> Edin Ganić - edinganic99@gmail.com
+
+> Project Link: https://github.com/ganicch/Web_Shop
